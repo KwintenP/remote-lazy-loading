@@ -29,3 +29,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 Through webpack plugin? -> not meant for this
 Create a vendor chunk and share that in the build process using the dll plugin.
+
+Creating of the dll plugin should happen once before hand and the aggregeator project should nog change in terms of the vendor libs. No commons chunkplugin should be used.
