@@ -234,12 +234,12 @@ module.exports = {
       "minChunks": null
     }),
     // Replace with the dll plugin https://github.com/webpack/docs/wiki/list-of-plugins#dllreferenceplugin
-    new CommonsChunkPlugin({
-      "name": "vendor",
-      "minChunks": (module) => module.resource && module.resource.startsWith(nodeModules),
-      "chunks": [
-        "main"
-      ]
+    // new CommonsChunkPlugin({
+    //   "name": "vendor",
+    //   "minChunks": (module) => module.resource && module.resource.startsWith(nodeModules),
+    //   "chunks": [
+    //     "main"
+    //   ]
     }),
     new ExtractTextPlugin({
       "filename": "[name].bundle.css",
